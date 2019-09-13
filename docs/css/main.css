@@ -98,9 +98,8 @@ h2 {
 }
 
 .sidebar.collapse {
-    transform: translateX(-100%);
+    transform: translateX(-110%);
 }
-
 
 .click {
     background: rgba(0, 0, 0, 0.1) !important;
@@ -110,4 +109,44 @@ h2 {
 .clicking {
     background: rgba(0, 0, 0, 0);
     transition: background 0.25s ease-in-out;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        bottom: 4rem;
+        top: auto;
+        transform: translateY(4rem);
+    }
+
+    .sidebar.collapse {
+        transform: translateY(100%);
+    }
+
+    #top-toggle {
+        display: none;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .sidebar p {
+        margin: 1.5rem;
+        margin-left: 1.5rem;
+    }
+
+    .toggle {
+        padding: 1rem;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .toggle img {
+        width: inherit;
+    }
 }

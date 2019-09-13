@@ -8,6 +8,7 @@ function toggleSidebar() {
         sidebar.classList.add("collapse");
     }
 }
+
 window.onload = function(e) {
     var anchors = document.getElementsByClassName("ripple");
     console.log(anchors.length);
@@ -34,7 +35,6 @@ window.onload = function(e) {
     var sidebar = document.querySelector(".sidebar");
 
     window.addEventListener("mousedown", (event) => {
-        this.console.log("clc");
         if(!sidebar.classList.contains("collapse")) {
             sidebar.classList.add("collapse");
         }
